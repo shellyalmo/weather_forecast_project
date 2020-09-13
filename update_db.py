@@ -14,3 +14,6 @@ weather_data = [['Jerusalem', 'Israel', 29.0], [
 # Create the pandas DataFrame
 weather_df = pd.DataFrame(weather_data, columns=['City', 'Country', 'Temp'])
 
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()

@@ -4,6 +4,6 @@ from create_pandas_df import create_pandas_df_from_API
 # if statement for create db if no db exists
 # call function from current_weather file, and get the response
 
-
-print(create_pandas_df_from_API(response))
+(convert_json_to_python(response))
+# print(create_pandas_df_from_API(response))
 # call update_db function
