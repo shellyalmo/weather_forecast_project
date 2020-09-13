@@ -6,6 +6,6 @@ cursor = connection.cursor()
 
 # create table
 cursor.execute('''CREATE TABLE Weather
-                ([City] text, [Country] text, [Temp] integer)''')
+                ([name] text, [temp] decimal(5,2), [temp_max] decimal(5,2), [temp_min] decimal(5,2), [humidity] decimal(5,2), [pressure] decimal(5,2), [wind_speed] decimal(5,2), [wind_deg] decimal(5,2))''')
 
 connection.commit()
