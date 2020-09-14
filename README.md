@@ -1,5 +1,5 @@
 # HowHot - Weather Forecast Project
-A program collecting data provided by the Israel meteorological service, and predicting the maximal daily temperature.
+A program collecting data provided by openweathermap.org, and predicting the maximal daily temperature.
 
 ## Table of Contents
 * [General Info](#general-info)
@@ -26,11 +26,13 @@ $ npm start
 *add a picture later*
 
 ## To-do:
-- [ ] Use API from open weather map. wait till activated
+- [ ] Convert json API to pandas df
+- [ ] Automate getting the API
 - [ ] ETL with pandas. parsing data. Data scraper
 - [ ] maybe transform (F to C)
 - [x] Load to Database (Postgres, my SQL, SQLite)
+- [ ] Automate running main.py with Airflow
 - [ ] Maybe cloud
 - [ ] Do ML on data
-- [ ] Add to website with dashboards
+- [ ] Add to website with dashboards. Display date time not in Unix.
 
