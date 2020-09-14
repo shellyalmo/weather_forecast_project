@@ -26,7 +26,9 @@ $ npm start
 *add a picture later*
 
 ## To-do:
-- [ ] Convert json API to pandas df
+- [x] Convert json API to pandas df
+- [ ] Extract the desired keys from the data frame
+- [ ] Update the database
 - [ ] Automate getting the API
 - [ ] ETL with pandas. parsing data. Data scraper
 - [ ] maybe transform (F to C)
