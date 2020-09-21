@@ -27,12 +27,9 @@ $ npm start
 
 ## To-do:
 - [x] Convert json API to pandas df
-- [x] Transform-Extract the desired keys from the data frame
-- [ ] Load- Update the database
+- [x] ETL- Transform-Extract the desired keys from the data frame
+- [x] Load- Update the database
 - [ ] Automate getting the API
-- [ ] ETL with pandas. parsing data. Data scraper
-- [ ] maybe transform (F to C)
-- [x] Load to Database (Postgres, my SQL, SQLite)
 - [ ] Automate running main.py with Airflow
 - [ ] Maybe cloud
 - [ ] Do ML on data
