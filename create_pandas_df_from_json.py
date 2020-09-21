@@ -1,3 +1,5 @@
+""" This file is extracting the weather data.
+"""
 """
 This is the "example" module.
 
@@ -11,7 +13,7 @@ from pandas.io.json import json_normalize
 
 
 def convert_json_to_dict():
-    """ Convert json file to dict dataframe
+    """ Convert json file to python dictionary
     """
     with open('current_weather_by_city_ID_API.json', 'r') as JSON:
         json_dict = json.load(JSON)
@@ -19,9 +21,10 @@ def convert_json_to_dict():
 # print(convert_json_to_dict())
 
 def convert_dict_to_df():
+    """ Convert python dictionary to pandas data frame
+    """
     return pd.json_normalize(convert_json_to_dict())
 
-print(convert_dict_to_df())
 
 # def create_dict_df_from_API(convert_json_to_dict()):
 #     copied_dict = {'temp': response[['temp']], 'temp_min':response[['temp_min']], 'temp_max':response[['temp_max']], 'pressure':response['pressure'], 'humidity':response['humidity'], 'wind_speed': response['speed'], 'wind_deg':response['deg']}
