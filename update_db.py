@@ -1,6 +1,5 @@
 import sqlite3
 import pandas as pd
-from current_weather_by_city_ID_API import response
 from create_db import connection
 
 
