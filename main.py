@@ -4,6 +4,6 @@ from TransformLoad import drop_col, change_col_name
 
 # if statement for create db if no db exists
 
-convert_dict_to_df()
-print(change_col_name(drop_col(convert_dict_to_df())))
-# update_db(weather_df)
+new_df_to_sql =change_col_name(drop_col(convert_dict_to_df()))
+
+update_db(new_df_to_sql)
