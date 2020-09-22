@@ -29,8 +29,11 @@ $ npm start
 - [x] Convert json file to pandas df
 - [x] ETL- Transform-Extract the desired keys from the data frame
 - [x] Load- Update the database
+- [ ] Test eaach function
 - [ ] Automate getting the API
-- [ ] Automate running main.py with Airflow
+- [ ] Explain token as env var
+- [ ] After uploading to DB delete the original json file from computer in another file - deleting jsons
+- [ ] Schedule running main.py with Airflow
 - [ ] Maybe cloud
 - [ ] Do ML on data
 - [ ] Add to website with dashboards. Display date time not in Unix.
