@@ -28,8 +28,9 @@ $ npm start
 ## To-do:
 - [x] Convert json file to pandas df
 - [x] ETL- Transform-Extract the desired keys from the data frame
+- [ ] Convert kelvin to celsius
 - [x] Load- Update the database
-- [ ] Test eaach function
+- [ ] Test each function
 - [ ] Automate getting the API
 - [ ] Explain token as env var
 - [ ] After uploading to DB delete the original json file from computer in another file - deleting jsons
