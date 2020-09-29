@@ -5,6 +5,6 @@ from get_weather_data_from_OpenWeatherMap import get_current_weather_data_from_O
 
 # if statement for create db if no db exists
 filename = write_weather_data_in_json_file(get_current_weather_data_from_OpenWeatherMap())
-new_df_to_sql =change_col_name(drop_col(convert_dict_to_df()))
+new_df_to_sql =change_col_name(drop_col(convert_dict_to_df(filename)))
 
 update_db(new_df_to_sql)
