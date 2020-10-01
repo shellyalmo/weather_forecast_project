@@ -17,7 +17,7 @@ def write_weather_data_in_json_file(json_data):
         Name the file by the Unix Timestamp.
     """
     name = 'data' + str(json_data['dt'])
-    filename = "%s.json" % name
+    filename = r"data_cache/%s.json" % name
     with open(filename, 'w') as f:
         json.dump(json_data, f)
     return filename
