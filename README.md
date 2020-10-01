@@ -1,31 +1,42 @@
-# HowHot - Weather Forecast Project
-A program collecting data provided by openweathermap.org, and predicting the maximal daily temperature.
+# HowHotDB - Weather database project 
+A Python program that builds a database of current weather data from OpenWeatherMap web APIs.
 
 ## Table of Contents
 * [General Info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* Status
+* [Status](#To-Do)
 
 ## General Info
-This project is ...
+HowHotDB is a Python program that retrieves current weather data with API from openweathermap.org, parses the data using pandas library and saves it in a local SQLite database. 
 
 ## Technologies
-Project is created with:
+The project is created with:
 * Python version: 3.8
 * SQLite3 version: 3
 
-## Setup
-To run this project, install it locally using npm:
+## Setup 
+The following instructions assume Python 3 and pip are already installed.
 
-```
-$ cd ../lorem
-$ npm install
-$ npm start
-```
-*add a picture later*
+* Before running this project, you will need to install the dependencies by running the following command:
+    ```
+    pip install -r requirements.txt
+    ```
+* Create the local database by running the file createDB.py
 
-## To-do:
+* Signup on the OpenWeatherMap website to get your own API key. This API key has to remain private, and that's why it will be saved as an environment variable and will be hidden outside of the program. 
+
+* Create in the project folder a file called .env
+
+* Save your private API key in the .env file.
+For example:
+    ```
+    api-token = "typeyourapikeyhere"
+    ```
+* Run main.py
+* Optional - schedule running main .py to get the current weather data for other cities.
+
+## To-Do:
 - [x] Convert json file to pandas df
 - [x] ETL- Transform-Extract the desired keys from the data frame
 - [x] Convert kelvin to celsius
@@ -34,9 +45,11 @@ $ npm start
 - [x] Setup environment variables using load_dotenv
 - [x] Test each function- unittest
 - [x] Put all the jsons in one folder
-- [ ] Explain how to setup (run manually create db, run main, env var with api token) and how to install libraries, add requirements.txt
+- [x] Explain how to setup (run manually create db, run main, env var with api token) and how to install libraries, add requirements.txt
+- [ ] Run main.py with argparse to get data from other cities but Tel Aviv
+- [ ] Add an image
 - [ ] Schedule running main.py with Airflow
 - [ ] Maybe run this in the cloud
-- [ ] Do ML on data
+- [ ] Build ML model on data
 - [ ] Add website with dashboards. Display date time not in Unix.
 
