@@ -3,3 +3,5 @@
 /TestDB.db
 *.env
 *.json
+__pycache__/
+data_cache/
