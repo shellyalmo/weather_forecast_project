@@ -30,12 +30,13 @@ $ npm start
 - [x] ETL- Transform-Extract the desired keys from the data frame
 - [x] Convert kelvin to celsius
 - [x] Load- Update the database
-- [ ] Test each function
-- [ ] Automate getting the API
-- [ ] Explain token as env var
-- [ ] After uploading to DB delete the original json file from computer in another file - deleting jsons
+- [x] Fetch the json from API using requests library
+- [x] Setup environment variables using load_dotenv
+- [x] Test each function- unittest
+- [x] Put all the jsons in one folder
+- [ ] Explain how to setup (run manually create db, run main, env var with api token) and how to install libraries, add requirements.txt
 - [ ] Schedule running main.py with Airflow
-- [ ] Maybe cloud
+- [ ] Maybe run this in the cloud
 - [ ] Do ML on data
-- [ ] Add to website with dashboards. Display date time not in Unix.
+- [ ] Add website with dashboards. Display date time not in Unix.
 
