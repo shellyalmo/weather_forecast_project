@@ -1,8 +1,8 @@
 """
->>> convert_json_to_dict("data1234")
-{"coord": {"lon": 34.78, "lat": 32.08}, "weather": [{"id": 801, "main": "Clouds", "description": "few clouds", "icon": "02d"}], "base": "stations", "main": {"temp": 303.85, "feels_like": 305.28, "temp_min": 302.59, "temp_max": 304.82, "pressure": 1006, "humidity": 62}, "visibility": 10000, "wind": {"speed": 5.1, "deg": 320}, "clouds": {"all": 20}, "dt": 1599661762, "sys": {"type": 1, "id": 6845, "country": "IL", "sunrise": 1599621680, "sunset": 1599666917}, "timezone": 10800, "id": 293397, "name": "Tel Aviv", "cod": 200}
+>>> convert_json_to_dict("data1600689959.json")
+{'coord': {'lon': 34.78, 'lat': 32.08}, 'weather': [{'id': 800, 'main': 'Clear', 'description': 'clear sky', 'icon': '01d'}], 'base': 'stations', 'main': {'temp': 303.84, 'feels_like': 303.4, 'temp_min': 302.04, 'temp_max': 305.37, 'pressure': 1010, 'humidity': 52}, 'visibility': 10000, 'wind': {'speed': 5.7, 'deg': 310}, 'clouds': {'all': 0}, 'dt': 1600689959, 'sys': {'type': 1, 'id': 6845, 'country': 'IL', 'sunrise': 1600658915, 'sunset': 1600702755}, 'timezone': 10800, 'id': 293397, 'name': 'Tel Aviv', 'cod': 200}
 
->>> convert_dict_to_df()
+>>> convert_dict_to_df("data1600689959.json")
 
 """
 
@@ -21,7 +21,7 @@ def convert_json_to_dict(filename):
 
 
 def convert_dict_to_df(filename):
-    """ Convert python dictionary to pandas data frame
+    """ Convert python dictionary to pandas dataframe
     """
     return pd.json_normalize(convert_json_to_dict(filename))
 
