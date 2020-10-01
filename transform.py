@@ -10,7 +10,6 @@ PRT  Portugal  35.85     14.85    -41.15
 """
 
 import pandas as pd
-import pytemperature
 
 # Fake data for testing
 data = {'country': ['Italy','Spain','Greece','France','Portugal'],
@@ -35,9 +34,9 @@ def change_col_name(pandas_df_dropped):
 def convert_kelvin_to_celsius(pandas_df_dropped_changed):
     """ Convert the temp, temp_min, temp_max measurement unit from Kelvin to Celsius.
     """
-    pandas_df_dropped_changed.temp = pytemperature.k2c(pandas_df_dropped_changed.temp)
-    pandas_df_dropped_changed.temp_min = pytemperature.k2c(pandas_df_dropped_changed.temp_min)
-    pandas_df_dropped_changed.temp_max = pytemperature.k2c(pandas_df_dropped_changed.temp_max)
+    columns = ["temp", "temp_min", "temp_max"]
+    for column in columns:
+        pandas_df_dropped_changed[column] = pandas_df_dropped_changed[column] - 273.15
     return pandas_df_dropped_changed
 
 
