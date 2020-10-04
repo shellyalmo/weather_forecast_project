@@ -12,10 +12,10 @@ PRT  Portugal  35.85     14.85    -41.15
 import pandas as pd
 
 # Fake data for testing
-data = {'country': ['Italy','Spain','Greece','France','Portugal'],
+data = {'country': ['Italy', 'Spain', 'Greece', 'France', 'Portugal'],
         'temp': [345, 289, 333, 312, 309],
-        'temp_min': [290,298,299,218,288],
-        'temp_max': [343,333,334,345,232]}
+        'temp_min': [290, 298, 299, 218, 288],
+        'temp_max': [343, 333, 334, 345, 232]}
 
 df = pd.DataFrame(data, index=['ITA', 'ESP', 'GRC', 'FRA', 'PRT'])
 
@@ -31,6 +31,7 @@ def change_col_name(pandas_df_dropped):
     """
     return pandas_df_dropped.rename(columns={"main.temp": "temp", "main.temp_min": "temp_min", "main.temp_max": "temp_max", "main.pressure": "pressure", "main.humidity": "humidity", "wind.speed": "wind_speed", "wind.deg": "wind_deg"})
 
+
 def convert_kelvin_to_celsius(pandas_df_dropped_changed):
     """ Convert the temp, temp_min, temp_max measurement unit from Kelvin to Celsius.
     """
@@ -38,6 +39,12 @@ def convert_kelvin_to_celsius(pandas_df_dropped_changed):
     for column in columns:
         pandas_df_dropped_changed[column] = pandas_df_dropped_changed[column] - 273.15
     return pandas_df_dropped_changed
+
+
+def set_datetime_col_as_row_index(pandas_df_dropped_changed_converted):
+    """ Set the datetime column to be the dataframe row index.
+    """
+    return pandas_df_dropped_changed_converted.set_index('dt')
 
 
 if __name__ == "__main__":
