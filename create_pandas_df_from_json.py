@@ -17,7 +17,7 @@ from pandas.io.json import json_normalize
 def convert_json_to_dict(filename):
     """ Convert json file to python dictionary
     """
-    with open(filename, 'r') as JSON:
+    with open("data_cache/" + filename, 'r') as JSON:
         json_dict = json.load(JSON)
     return json_dict
 
