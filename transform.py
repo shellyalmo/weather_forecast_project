@@ -19,7 +19,7 @@ data = {'country': ['Italy', 'Spain', 'Greece', 'France', 'Portugal'],
 
 df = pd.DataFrame(data, index=['ITA', 'ESP', 'GRC', 'FRA', 'PRT'])
 
-
+# dont drop but keep
 def drop_col(pandas_df):
     """ Drop unnecessary columns from the data frame
     """
