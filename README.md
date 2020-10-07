@@ -32,13 +32,11 @@ For example:
     api-token = "typeyourapikeyhere"
     ```
 * Run main.py in order to get and save the current weather data for Tel Aviv city by default
-* Optional - run main.py from the command line with a specified city id as argument. For example:
+* Optional - run main.py from the command line with a specified city id as optional argument. For example, Detroit,US:
 
-```
-# current weather data for Detroit,US
-
-python main.py --city_id "4990729"
-```
+    ```
+    python main.py --city_id "4990729"
+    ```
 * Optional - schedule running main .py to get the current weather data.
 
 ## To-Do:
