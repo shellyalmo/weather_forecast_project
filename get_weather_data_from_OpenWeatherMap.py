@@ -4,7 +4,7 @@ import requests
 import json
 
 
-def get_current_weather_data_from_OpenWeatherMap(id="293397"):
+def get_current_weather_data_from_OpenWeatherMap(id):
     """ Returns current weather data by city id (Tel Aviv by default)
     """
     load_dotenv()
