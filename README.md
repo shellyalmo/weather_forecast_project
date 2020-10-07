@@ -22,8 +22,6 @@ The following instructions assume Python 3 and pip are already installed.
     ```
     pip install -r requirements.txt
     ```
-* Create the local database by running the file createDB.py
-
 * Signup on the OpenWeatherMap website to get your own API key. This API key has to remain private, and that's why it will be saved as an environment variable and will be hidden outside of the program. 
 
 * Create in the project folder a file called .env
@@ -33,7 +31,8 @@ For example:
     ```
     api-token = "typeyourapikeyhere"
     ```
-* Run main.py
+* Run main.py in order to get and save the current weather data for Tel Aviv
+* Optional - run main.py from the command line with a specified city id as argument
 * Optional - schedule running main .py to get the current weather data for other cities.
 
 ## To-Do:
@@ -46,7 +45,7 @@ For example:
 - [x] Test each function- unittest
 - [x] Put all the jsons in one folder
 - [x] Explain how to setup (run manually create db, run main, env var with api token) and how to install libraries, add requirements.txt
-- [ ] Run main.py with argparse to get data from other cities but Tel Aviv
+- [x] Run main.py with argparse to get data from other cities but Tel Aviv
 - [ ] Add an image
 - [ ] Schedule running main.py with Airflow
 - [ ] Maybe run this in the cloud
