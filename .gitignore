@@ -1,6 +1,6 @@
 /json_from_IMS.py
 /tempCodeRunnerFile.py
-/TestDB.db
+*.db
 *.env
 *.json
 __pycache__/
