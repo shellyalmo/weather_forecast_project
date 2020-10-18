@@ -23,5 +23,5 @@ def start():
 
 
 while True:
-    time.sleep(900)
     start()
+    time.sleep(900)
