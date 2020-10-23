@@ -14,6 +14,9 @@ HowHotDB is a Python program that retrieves current weather data with API from o
 The project is created with:
 * Python version: 3.8
 * SQLite3 version: 3
+* pandas
+* requests
+* python-dotenv
 
 ## Setup 
 The following instructions assume Python 3 and pip are already installed.
@@ -38,7 +41,14 @@ For example:
     python main.py --city_id "4990729"
     ```
 * Optional - schedule running main .py to get the current weather data.
-
+* Build an image from the Dockerfile:
+``` 
+docker build . -t <yourDockerID>/weather
+```
+*  Run the image on a Docker container:
+```
+docker run --env api-token=<yourapifromOpenWeatherMap> -it <yourDockerID>/weather
+```
 ## To-Do:
 - [x] Convert json file to pandas df
 - [x] ETL- Transform-Extract the desired keys from the data frame
@@ -50,9 +60,7 @@ For example:
 - [x] Put all the jsons in one folder
 - [x] Explain how to setup (run manually create db, run main, env var with api token) and how to install libraries, add requirements.txt
 - [x] Run main.py with argparse to get data from other cities but Tel Aviv
-- [ ] Add an image
-- [ ] Schedule running main.py with Airflow
-- [ ] Maybe run this in the cloud
+- [x] Run in Docker container
 - [ ] Build ML model on data
 - [ ] Add website with dashboards. Display date time not in Unix.
 
