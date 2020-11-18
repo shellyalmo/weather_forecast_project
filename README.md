@@ -1,4 +1,4 @@
-# HowHotDB - Weather database project 
+# Weather database project 
 A Python program that builds a database of current weather data from OpenWeatherMap web APIs.
 A blog post about how it was made: https://dev.to/shellyalmo/series/9345
 ## Table of Contents
