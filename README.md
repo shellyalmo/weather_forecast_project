@@ -8,7 +8,8 @@ A blog post about how it was made: https://dev.to/shellyalmo/series/9345
 * [Status](#To-Do)
 
 ## General Info
-HowHotDB is a Python program that retrieves current weather data with API from openweathermap.org, parses the data using pandas library and saves it in a local SQLite database. 
+This is a Python program that retrieves current weather data with API from openweathermap.org, parses the data using pandas library and saves it in a local SQLite database. 
+For the data analysis part, see my repository: https://github.com/shellyalmo/weather_data_analysis
 
 ## Technologies
 The project is created with:
